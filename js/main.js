@@ -16,7 +16,7 @@ function pesquisa() {
 let nome = '';
 let descricao = '';
 let tags = '';
-  // Itera sobre os personagens e constrói o HTML dos resultados
+  // Altera sobre os personagens e constrói o HTML dos resultados
   for (let personagem of personagens) {
       nome = personagem.nome.toLowerCase();
       descricao = personagem.descricao.toLowerCase();
@@ -28,6 +28,7 @@ let tags = '';
             <a href="#" target="_blank">${personagem.nome}</a>
           </h2>
           <p class="descricao-meta">${personagem.descricao}</p>
+          <p class='imagem'>${personagem.imgs}</p> <br>
           <a href=${personagem.link} target="_blank">Clique aqui</a>
         </div>
       `;
