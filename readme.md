@@ -1,6 +1,6 @@
 # Aplicação de Busca de Personagens One Piece
 
-- Aplicação feita durante a imersão da alura com google gemini
+- Aplicação feita durante a imersão dev da alura com google gemini.
 
 ## Descrição
 Este projeto web permite aos fãs de One Piece pesquisar por personagens de forma rápida e eficiente. Ao digitar um termo na caixa de pesquisa, a aplicação busca em uma base de dados interna e retorna uma lista de personagens relevantes, com informações como nome, descrição e links para mais detalhes.
