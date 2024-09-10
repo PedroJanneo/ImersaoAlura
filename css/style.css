@@ -1,4 +1,4 @@
-/* Importa a fonte Chakra Petch do Google Fonts */
+/* Importa a fonte  do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 /* Estiliza o corpo da página */
@@ -70,33 +70,38 @@ section button:hover {
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
     width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 46vh; /* Altura máxima da caixa de resultados */
+    height: 50vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
+    overflow: hidden;
 }
 
 /* Estiliza cada item de resultado */
 .item-resultado {
-    background: rgba(255, 255, 255, 0.5);; /* Cor de fundo dos itens */
+    background: rgba(255, 255, 255, 0.5); /* Cor de fundo dos itens */
     border-radius: 1rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
-    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    margin-bottom: 5rem; /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    overflow: hidden; /* tirar a bara de rolagem */
+    overflow: hidden; /* Permite rolagem se necessário */
+    min-height: 390px; /* Altura mínima para garantir que o conteúdo não fique cortado */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura e altura */
 }
+
 
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
-    font-size: 1.5rem; /* Tamanho da fonte */
-    color: #000000; /* Cor do texto */
+    font-size: 1.5rem ; /* Tamanho da fonte */
+    color: #000000 ; /* Cor do texto */
 }
 
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
     text-decoration: none; /* Remove o sublinhado padrão dos links */
     color: #000000; /* Cor do texto dos links */
+    margin-bottom: 20px;
 }
 
 /* Estiliza os links quando são passados o mouse sobre */
@@ -124,17 +129,34 @@ footer {
     border-top: 0px solid black; /* largura estilo cor */
 }
 
-a {
+.link-footer:visited{
+    color:white
+}
+
+.link-footer {
     color: white; /* Cor do link normal */
 }
 
-a:visited {
-    color: white; /* Cor do link visitado */
-}
-
-a:hover {
+.link-footer:hover {
     color: white; /* Cor do link quando o mouse está sobre ele */
 }
+
+.imagem {
+    display: inline-block;
+    width: 170px; /* Largura fixa para todas as imagens */
+    height: 170px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Cobre a área da caixa, mantendo a proporção */
+    filter: contrast(1.2); /* Melhora a nitidez */
+    margin-right: 10px; /* Espaçamento entre imagens */
+    object-fit: contain; /* Ajusta a imagem para caber dentro do contêiner sem cortar */
+    
+}
+
+
+  .imagem-item {
+    display: inline-block;
+    margin-right: 10px; /* Espaçamento entre as imagens */
+  }
 
 /* Confiurar a responsividade para tablets/mobile  */
 @media (max-width: 768px) { 
