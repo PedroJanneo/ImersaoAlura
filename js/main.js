@@ -23,15 +23,16 @@ let tags = '';
       tags = personagem.tags.toLowerCase();
     if (nome.includes(termoPesquisa) || descricao.includes(termoPesquisa) || tags.includes(termoPesquisa)) {
       resultado += `
-        <div class="item-resultado">
-          <h2>
-            <a href="#" target="_blank">${personagem.nome}</a>
-          </h2>
-          <p class="descricao-meta">${personagem.descricao}</p>
-          <p class='imagem'>${personagem.imgs}</p> <br>
-          <a href=${personagem.link} target="_blank">Clique aqui</a>
-        </div>
+     <div class="item-resultado">
+      <h2>
+      <a href="#" target="_blank">${personagem.nome}</a>
+      </h2>
+      <p class="descricao-meta">${personagem.descricao}</p>
+      <img class='imagem' src="${personagem.img1}" alt="Imagem 1"></img> <img class='imagem' src="${personagem.img2}" alt="Imagem 2"></img><img class='imagem' src="${personagem.img3}" "></img><br>
+      <a href="${personagem.link}" target="_blank">Clique aqui</a>
+      </div>
       `;
+     
     }
   }
 
