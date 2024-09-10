@@ -10,7 +10,7 @@ function pesquisa() {
   termoPesquisa = termoPesquisa.toLowerCase();
   // Verifica se o termo de pesquisa está vazio
   if (!termoPesquisa ) {
-    sessao.innerHTML = "<p>Nenhum personagem encontrado. Você não pesquisou nenhum personagem ou caracteristica</p>";
+    sessao.innerHTML = "<p><b>Nenhum personagem encontrado. Você não pesquisou nenhum personagem ou caracteristica</b></p>";
     return;
   }
 let nome = '';
@@ -37,7 +37,7 @@ let tags = '';
   }
 
     if ( !resultado ){
-      resultado = '<p> nada foi encontrado</p>'
+      resultado = '<p><b> nada foi encontrado</b></p>'
     }
   // Atualiza a seção com os resultados
   sessao.innerHTML = resultado;
